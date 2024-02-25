@@ -33,7 +33,7 @@ classDiagram
       -books: list
       +add_book(book: Book)
     }
-    Library --> "many" Book: contains
+    Library --* "many" Book: contains
 ```
 
 **Ejemplo:** Sistema de Computadora
@@ -66,8 +66,8 @@ classDiagram
       -processor: Processor
       -memory: Memory
     }
-    Computer --> Processor: has
-    Computer --> Memory: has
+    Computer --* Processor: has
+    Computer --* Memory: has
 ```
 
 ### Herencia y Relaciones "Es Un"
@@ -161,7 +161,7 @@ classDiagram
     class Speaker {
         +play_sound(sound)
     }
-    AudioSystem --> Speaker
+    AudioSystem --* Speaker
 ```
 
 #### Cuándo Usar Herencia
