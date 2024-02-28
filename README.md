@@ -88,8 +88,7 @@ class Car(Vehicle):
         self.car_type = car_type
 ```
 
-```
-mermaid
+```mermaid
 classDiagram
     Vehicle <|-- Car
     class Vehicle {
@@ -115,8 +114,7 @@ class Teacher(Employee):
         self.subject = subject
 ```
 
-```
-mermaid
+```mermaid
 classDiagram
     Employee <|-- Teacher
     class Employee {
@@ -191,3 +189,34 @@ classDiagram
         -string department
     }
 ```
+
+**Ejercicio:**
+1. Create class Line.
+```mermaid
+classDiagram
+    class Line {
+      +float length
+      +float slope
+      +Point start
+      +Point end
+      +__init__(self, start, end)
+      +compute_length()
+      +compute_slope()
+      +compute_horizontal_cross()
+      +compute_vertical_cross()
+    }
+```  
+ - *length*, *slope*, start, end: Instance attributes, two of them being points (so a line is composed at least of two points).
+ - compute_length(): should return the line´s length
+ - compute_slope(): should return the slope of the line from tje horizontal in deg.
+ - compute_horizontal_cross(): should return if exists the intersection with x-axis
+ - compute_vertical_cross(): should return if exists the intersection with y-axis
+
+2. Redefine the class Rectangle, adding a new method of initialization using 4 Lines (composition at its best, a rectangle is compose of 4 lines).
+
+3. **Optional:** Define a method called discretize_line() that creates an array on *n* equally spaced points in the line and assigned as a instance attribute.
+
+## Reto 2
+Soon, so stay alert!
+
+
