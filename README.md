@@ -216,7 +216,7 @@ classDiagram
 
 3. **Optional:** Define a method called discretize_line() that creates an array on *n* equally spaced points in the line and assigned as a instance attribute.
 
-## Reto 2
+## Reto 3
 Soon, so stay alert!
 
 
